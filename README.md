@@ -37,19 +37,79 @@ Diff = A ⊕ B ⊕ Bin
 Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
+**Full Adder**
+
+
+<img width="429" height="395" alt="image" src="https://github.com/user-attachments/assets/c28189bf-c94b-4308-8a5c-e958f20370bb" />
+
+
+**Full Subtractor**
+
+
+<img width="438" height="393" alt="image" src="https://github.com/user-attachments/assets/df142bfb-4555-4e2f-b034-c2feda8ceaab" />
+
 
 **Procedure**
 
 Write the detailed procedure here
 
 **Program:**
+Full Adder
+```
+module full_adder (
+    input  wire a, b, cin,   // Inputs
+    output wire sum, carry   // Outputs
+);
 
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
+    // Logic equations
+    assign sum   = a ^ b ^ cin;                  // XOR for sum
+    assign carry = (a & b) | (b & cin) | (a & cin); // Majority function for carry
+
+endmodule
+```
+/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. 
 */
+<img width="857" height="243" alt="image" src="https://github.com/user-attachments/assets/059e9e3c-0ec1-4f0d-a78d-858f234b9183" />
+
+Full Subtractor
+```
+module full_subtractor (
+    input  wire a, b, bin,       // Inputs
+    output wire diff, borrow     // Outputs
+);
+
+    // Logic equations
+    assign diff   = a ^ b ^ bin;                  // Difference
+    assign borrow = (~a & b) | (~(a ^ b) & bin);  // Borrow logic
+
+endmodule
+```
+Program to design a full adder and full subtractor circuit and verify its truth table in quartus using Verilog programming.
+<img width="717" height="250" alt="image" src="https://github.com/user-attachments/assets/a6d29930-d873-4fc3-b164-84a8842f3dd6" />
+
+
+Developed by:LOHINI S
+RegisterNumber:25015038
 
 **RTL Schematic**
+Full Adder:
+
+<img width="996" height="761" alt="image" src="https://github.com/user-attachments/assets/4478863e-e5aa-4b24-a2cd-6716d5cc9437" />
+
+Full Subtractor:
+<img width="1003" height="641" alt="image" src="https://github.com/user-attachments/assets/e9799e26-a695-4166-8470-f8bb4605e975" />
+
 
 **Output Timing Waveform**
+Full Adder
+
+<img width="1230" height="293" alt="image" src="https://github.com/user-attachments/assets/400552f4-e82a-416f-8216-ea60e7ebefb6" />
+
+Full Subtractor
+
+<img width="1230" height="293" alt="image" src="https://github.com/user-attachments/assets/3e43f0e7-1c3c-4738-aa8e-2f15d54d6366" />
+
+
 
 **Result:**
 
