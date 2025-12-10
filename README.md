@@ -107,11 +107,14 @@ Full Subtractor:
 **Output Timing Waveform**
 Full Adder
 
-<img width="1230" height="293" alt="image" src="https://github.com/user-attachments/assets/400552f4-e82a-416f-8216-ea60e7ebefb6" />
+<img width="1300" height="335" alt="image" src="https://github.com/user-attachments/assets/40d13a55-3d35-4941-bfb7-25714aecd630" />
+
+
 
 Full Subtractor
 
-<img width="1230" height="293" alt="image" src="https://github.com/user-attachments/assets/3e43f0e7-1c3c-4738-aa8e-2f15d54d6366" />
+<img width="1315" height="347" alt="image" src="https://github.com/user-attachments/assets/b4223102-ad90-40a9-a84e-b7aa68fd135b" />
+
 
 
 
